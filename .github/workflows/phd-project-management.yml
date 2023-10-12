@@ -1,0 +1,20 @@
+name: Add Issue to project
+on:
+  workflow_call:
+
+jobs:
+  add_issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate token
+        id: generate_app_token
+        uses: actions/create-github-app-token@v1
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PEM }}
+
+      - name: Get project data
+        uses: actions/add-to-project@v0.5.0
+        with:
+          project-url: https://github.com/users/HChughtai/projects/3
+          github-token: ${{ steps.generate_app_token.outputs.token }}
