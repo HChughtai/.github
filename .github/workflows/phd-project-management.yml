@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Generate token
-        id: generate_app_token
+        id: app-token
         uses: actions/create-github-app-token@v1
         with:
           app-id: ${{ secrets.APP_ID }}
@@ -17,4 +17,4 @@ jobs:
         uses: actions/add-to-project@v0.5.0
         with:
           project-url: https://github.com/users/HChughtai/projects/3
-          github-token: ${{ steps.generate_app_token.outputs.token }}
+          github-token: ${{ steps.app-token.outputs.token }}
