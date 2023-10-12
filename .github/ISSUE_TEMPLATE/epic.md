@@ -1,5 +1,5 @@
 ---
-name: Epic
+name: 🐳 Epic
 about: Create a new epic
 title: "🐳 [EPIC]: <title>"
 labels: epic

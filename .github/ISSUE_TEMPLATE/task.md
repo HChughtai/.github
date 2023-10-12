@@ -1,5 +1,5 @@
 ---
-name: Task
+name: ✏️ Task
 about: Create a new task
 title: "✏️ [TASK]: <title>"
 labels: task

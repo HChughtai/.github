@@ -1,5 +1,5 @@
 ---
-name: User Story
+name: 📝 User Story
 about: Create a new user story
 title: "📝 [STORY]: As a <persona>, I want <to perform an action>, so that <I can achieve an end result>"
 labels: story
@@ -17,8 +17,6 @@ can write tasks and test cases to implement the item. -->
 
 <!-- What cases must be fulfilled to consider the story complete?-->
 
-### Related Work Items
-
 ```[tasklist]
-### Related Tasks
+### Related Work Items
 ```

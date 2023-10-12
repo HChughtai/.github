@@ -1,5 +1,5 @@
 ---
-name: Bug
+name: 🐛 Bug
 about: Record a new bug
 title: "🐛 [BUG]: <title>"
 labels: bug

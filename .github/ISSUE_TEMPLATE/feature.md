@@ -1,5 +1,5 @@
 ---
-name: Feature
+name: ✨ Feature
 about: Create a new feature
 title: "✨ [FEATURE]: <title>"
 labels: feature
@@ -15,9 +15,5 @@ assignees: ""
 <!-- How do we know when the feature is complete and of good quality? -->
 
 ```[tasklist]
-### Related Stories
-```
-
-```[tasklist]
-### Related Tasks
+### Related Work Items
 ```
