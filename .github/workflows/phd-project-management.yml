@@ -6,15 +6,8 @@ jobs:
   add_issue:
     runs-on: ubuntu-latest
     steps:
-      - name: Generate token
-        id: app-token
-        uses: actions/create-github-app-token@v1
-        with:
-          app-id: ${{ secrets.APP_ID }}
-          private-key: ${{ secrets.APP_PEM }}
-
       - name: Get project data
         uses: actions/add-to-project@v0.5.0
         with:
           project-url: https://github.com/users/HChughtai/projects/3
-          github-token: ${{ steps.app-token.outputs.token }}
+          github-token: ${{ secrets.PHD_PROJECT_MANAGEMENT_PAT }}
